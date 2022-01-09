@@ -163,6 +163,7 @@ def process_yaml(hass: HomeAssistant, ulm: UlmBase):
     # Create config dir
     os.makedirs(hass.config.path(f"{DOMAIN}/configs"), exist_ok=True)
     os.makedirs(hass.config.path(f"{DOMAIN}/custom_cards"), exist_ok=True)
+    os.makedirs(hass.config.path(f"{DOMAIN}/views"), exist_ok=True)
 
     if os.path.exists(hass.config.path(f"{DOMAIN}/configs")):
         # Create combined cards dir
