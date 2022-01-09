@@ -193,6 +193,12 @@ def process_yaml(hass: HomeAssistant, ulm: UlmBase):
             ),
             hass.config.path(f"{combined_cards_dir}/language.yaml"),
         )
+        shutil.copylang(
+            hass.config.path(
+                f"custom_components/{DOMAIN}/lovelace/translations/{language}.yaml"
+            ),
+            hass.config.path(f"{DOMAIN}/custom_cards"}/language.yaml"),
+        )        
         # Copy over cards from integration
         shutil.copytree(
             hass.config.path(
