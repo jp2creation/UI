@@ -23,9 +23,9 @@ This card needs the following to function correctly:
 
 ```yaml
 - type: 'custom:button-card'
-  template: custom_anniversaries_card
+  template: custom_card_anniversaries
   variables:
-    ulm_custom_card_bar_card_entity: sensor.memory_use_percent
+    ulm_custom_card_bar_anniversaries: sensor.sensor.anniversary
 ```
 ## Variables
 <table>
