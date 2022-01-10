@@ -1,9 +1,7 @@
 ---
-custom_anniversaries_card:
+custom_card_anniversaries:
   variables:
-    ulm_custom_anniversaries_card_color: "var(--google-blue)"
-    ulm_custom_anniversaries_card_min: "0"
-    ulm_custom_anniversaries_card_max: "100"
+    ulm_custom_card_anniversaries_color: "var(--google-blue)"
   triggers_update: "all"
   styles:
     grid:
@@ -25,5 +23,5 @@ custom_anniversaries_card:
             - box-shadow: "none"
             - border-radius: "var(--border-radius) var(--border-radius) 0px 0px"
             - padding: "12px"
-        entity: "[[[ return variables.ulm_custom_anniversaries_card_entity ]]]"
-        name: "[[[ return variables.ulm_custom_anniversaries_card_name != '' ? variables.ulm_custom_anniversaries_card_name : '' ]]]"
+        entity: "[[[ return variables.ulm_custom_card_anniversaries_entity ]]]"
+        name: "[[[ return variables.ulm_custom_card_anniversaries_name != '' ? variables.ulm_custom_card_anniversaries_name : '' ]]]"
