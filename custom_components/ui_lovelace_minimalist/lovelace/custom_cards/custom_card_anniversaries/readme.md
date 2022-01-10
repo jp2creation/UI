@@ -25,7 +25,7 @@ This card needs the following to function correctly:
 - type: 'custom:button-card'
   template: custom_card_anniversaries
   variables:
-    ulm_custom_card_bar_anniversaries: sensor.sensor.anniversary
+    ulm_custom_card_bar_anniversaries: sensor.anniversary
 ```
 ## Variables
 <table>
