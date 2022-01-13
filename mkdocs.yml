@@ -1,12 +1,23 @@
 ---
 # Project information
 site_name: "UI Lovelace Minimalist"
-site_url: "https://test.example.com"
+site_url: "https://ui-lovelace-minimalist.github.io/UI/"
 
 # Repository
 repo_url: "https://github.com/UI-Lovelace-Minimalist/UI"
 repo_name: "UI-Lovelace-Minimalist/UI"
 edit_url: "edit/dev/docs"
+
+nav:
+  - Home: "index.md"
+  - Setup:
+      - Installation: "setup/install.md"
+      - Configuration: "setup/configuration.md"
+  - Usage:
+      - Cards:
+          - card_light: "usage/cards/card_light.md"
+  - Development:
+      - Docs Style Guide: "development/docs_style_guide.md"
 
 extra_css:
   - "stylesheets/extra.css"
@@ -14,6 +25,8 @@ extra_css:
 theme:
   name: "material"
   language: "en"
+  font:
+    text: "Comfortaa"
   logo: "assets/logos/website_logo.png"
   favicon: "assets/logos/favicon/favicon-32x32.png"
   palette:
@@ -30,17 +43,13 @@ theme:
   features:
     - "navigation.instant"
     - "navigation.tracking"
-    - "navigation.tabs"
-    - "navigation.indexes"
     - "navigation.top"
+    - "toc.integrate"
     - "search.suggest"
     - "search.highlight"
     - "search.share"
     - "content.code.annotate"
     - "content.tabs.link"
-
-# extra_css:
-# extra_javascript:
 
 markdown_extensions:
   - "meta"
@@ -65,10 +74,6 @@ markdown_extensions:
   - "def_list"
   - toc:
       permalink: true
-
-# extra:
-#   social:
-#     - icon:
 
 plugins:
   - "search"
