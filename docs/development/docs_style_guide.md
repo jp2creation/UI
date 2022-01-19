@@ -1,5 +1,7 @@
 ---
 title: Docs Style Guide
+hide:
+  - toc
 ---
 
 ## Documentation Style Guide
@@ -56,7 +58,7 @@ Images, including screenshots, can help a reader better understand a concept. Ho
 
 #### Add the image link to content
 
-The Markdown code for including an image in a document is `![Image description which will be teh alt tag](../../assets/img/example.png)`
+The Markdown code for including an image in a document is `![Image description which will be teh alt tag](../../assets/img/ulm_cards/example.png)`
 
 ### Admonitions / Call-outs
 
@@ -65,3 +67,24 @@ Admonitions, also known as call-outs, are an excellent choice for including side
 ### Code Blocks
 
 Code blocks and examples are an essential part of technical project documentation. ULM Docs provides different ways to set up syntax highlighting for code blocks. For a more advanced usage of Code Blocks like adding Annations, Line Numbers, Highlighting, Embedding external files see the [Code Blocks page on mkdocs-material](https://squidfunk.github.io/mkdocs-material/reference/code-blocks/#usage).
+
+## Developing
+
+Run local:
+
+```bash
+pip install -r requirements.txt
+
+mkdocs serve
+
+# or
+mkdocs serve --dirtyreload
+```
+
+## Markdown linting
+
+Can be done automatically by running pre-commit
+
+```bash
+pre-commit run markdownlint
+```

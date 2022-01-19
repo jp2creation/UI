@@ -1,3 +1,10 @@
+---
+title: card_scenes
+hide:
+  - toc
+---
+<!-- markdownlint-disable MD046 -->
+
 # Custom-card "Scenes Card"
 
 The `card_scenes` you can control a input_number entity

@@ -1,5 +1,7 @@
 ---
 title: Configuration
+hide:
+  - toc
 ---
 
 ## Add theme to your Lovelace
@@ -8,7 +10,7 @@ To get this theme with all the button templates working make sure at least the g
 
 ### YAML Mode
 
-When you create your dashobards using Yaml mode add the following lines at the top of your Lovelace Yaml file.
+When you create your dashboards using Yaml mode add the following lines at the top of the Lovelace Yaml file of your dashboard configuration.
 
 ```yaml
 # For future use!

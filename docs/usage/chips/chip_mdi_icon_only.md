@@ -1,11 +1,13 @@
 ---
 title: chip_mdi_icon_only
+hide:
+  - toc
 ---
 <!-- markdownlint-disable MD046 -->
 
 ## Description
 
-![example-image](../../assets/img/card_example.png){ width="500" }
+![example-image](../../assets/img/ulm_chips/chip_example.png){ width="500" }
 
 Chip description should be here.
 
@@ -25,4 +27,6 @@ Chip description should be here.
 
 ??? note "Template Code"
 
-        Internal Link to Template Code here
+    ```yaml title="card_light.yaml"
+    --8<-- "custom_components/ui_lovelace_minimalist/lovelace/ulm_templates/card_templates/chips/chip_mdi_icon_only.yaml"
+    ```
